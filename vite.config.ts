@@ -8,17 +8,17 @@ export default defineConfig({
     port: 3005,
     proxy: {
       "/home": {
-        target: "http://localhost:3005",
+        target: "http://localhost:3004",
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/home/, ""),
       },
       "/following": {
-        target: "http://localhost:3005",
+        target: "http://localhost:3004",
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/following/, "/following/IG-Work"),
       },
       "/notFound": {
-        target: "http://localhost:3005",
+        target: "http://localhost:3004",
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/notFound/, "/notFound/IG-Work"),
       },
