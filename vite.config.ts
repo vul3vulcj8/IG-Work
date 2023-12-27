@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   base: "/IG-works/",
   server: {
-    port: 3004,
+    port: 3005,
     proxy: {
       "/home": {
         target: "http://localhost:3004",
