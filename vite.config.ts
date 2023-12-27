@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/IG-works/",
+  base: "/IG-Work/",
   server: {
     port: 3005,
     proxy: {
@@ -15,12 +15,12 @@ export default defineConfig({
       "/following": {
         target: "http://localhost:3005",
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/following/, "/following/IG-works"),
+        rewrite: (path) => path.replace(/^\/following/, "/following/IG-Work"),
       },
       "/notFound": {
         target: "http://localhost:3005",
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/notFound/, "/notFound/IG-works"),
+        rewrite: (path) => path.replace(/^\/notFound/, "/notFound/IG-Work"),
       },
     },
   },
