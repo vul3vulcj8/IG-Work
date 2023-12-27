@@ -15,12 +15,12 @@ export default defineConfig({
       "/following": {
         target: "http://localhost:3004",
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/following/, "/following/IG-Work"),
+        rewrite: (path) => path.replace(/^\/following/, "/following/IG-works"),
       },
       "/notFound": {
         target: "http://localhost:3004",
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/notFound/, "/notFound/IG-Work"),
+        rewrite: (path) => path.replace(/^\/notFound/, "/notFound/IG-works"),
       },
     },
   },
